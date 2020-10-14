@@ -1,7 +1,10 @@
-provider "aws" {
-    region = "us-east-2"
-    access_key = "AKIAZI66KHMKO7DB7G7Z"
-    secret_key = "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"
+resource "aws_vpc" "ashishvpc"
+{
+    cidr_block = "192.168.0.0/16"
+    enable_dns_support = "true"
+    tags = {
+        Name = "frontf"
+    }
 }
 
 resource "aws_s3_bucket" "ashishbucket" {
