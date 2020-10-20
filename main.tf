@@ -16,3 +16,19 @@ tags = {
       }
     
 }   
+
+resource "aws_subnet" "web" {
+vpc_id = aws_vpc.ashishvpc.id 
+cidr_block =  "192.168.0.0/24"
+tags = {
+        Name = "web"
+    }
+}
+
+resource "aws_subnet" "app"{
+    vpc_id = aws_vpc.ashishvpc.id
+    cidr_block = "192.168.1.0/24"
+    tags = {
+        Name = "web"
+    }
+}
