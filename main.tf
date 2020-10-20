@@ -1,9 +1,8 @@
-resource "aws_vpc" "ashishvpc"
-{
+resource "aws_vpc" "ashishvpc" {
     cidr_block = "192.168.0.0/16"
     enable_dns_support = "true"
     tags = {
-        Name = "qtvpc"
+        Name = "ashishvpc"
     }
 }
 
