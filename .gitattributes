@@ -1,3 +1,4 @@
 *.exe filter=lfs diff=lfs merge=lfs -text
 terraform-provider-aws_v3.11.0_x5 filter=lfs diff=lfs merge=lfs -text
 /home/ashish/qt/tf/.terraform/plugins/registry.terraform.io/hashicorp/aws/3.11.0/linux_amd64/terraform-provider-aws_v3.11.0_x5 filter=lfs diff=lfs merge=lfs -text
+.terraform/plugins/registry.terraform.io/hashicorp/aws/3.11.0/linux_amd64/terraform-provider-aws_v3.11.0_x5
